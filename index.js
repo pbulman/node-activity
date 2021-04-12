@@ -1,7 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000
 
 const connectionString = "mongodb+srv://root:umassd123@cluster0.thksr.mongodb.net/node_activity?retryWrites=true&w=majority"
 mongoose.connect(connectionString, 
